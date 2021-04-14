@@ -1,0 +1,61 @@
+<html>
+<head>
+
+<meta charset="utf-8">
+<script>
+var wynik, g1,g2;
+
+function abc()
+{ 
+var a=parseInt((Math.random()*5)+1);
+var b=parseInt((Math.random()*5)+1);
+
+if (a==1) {g1="<img src=kostka\\1.png>";}
+if (a==2) {g1="<img src=kostka\\2.png>";}
+if (a==3) {g1="<img src=kostka\\3.png>";}
+if (a==4) {g1="<img src=kostka\\4.png>";}
+if (a==5) {g1="<img src=kostka\\5.png>";}
+if (a==6) {g1="<img src=kostka\\6.png>";}
+
+if (b==1) {g2="<img src=kostka\\1.png>";}
+if (b==2) {g2="<img src=kostka\\2.png>";}
+if (b==3) {g2="<img src=kostka\\3.png>";}
+if (b==4) {g2="<img src=kostka\\4.png>";}
+if (b==5) {g2="<img src=kostka\\5.png>";}
+if (b==6) {g2="<img src=kostka\\6.png>";}
+
+document.getElementById('gracz1').innerHTML=g1;
+document.getElementById('gracz2').innerHTML=g2;
+
+if (a>b) {wynik="Wygrał Gracz1";}
+if (a<b) {wynik="Wygrał Gracz2";}
+if (a==b) {wynik="Gratulacje, Remis! :)";}
+
+document.getElementById('wynikgry').innerHTML=wynik;
+}
+</script>
+
+
+</head>
+<body>
+<center>
+<body style="background-color: black; color: white">
+<p style="font-size: 2.0em;">
+
+<div id="gracz1">  </div>
+<hr>
+<div id="gracz2">  </div>
+<br>
+<input type="button" onclick="abc()" value="GRAJ!">
+<br>
+<br>
+<div id="wynikgry"> </div>
+
+</p>
+</center>
+</body>
+
+
+
+
+</html> 
